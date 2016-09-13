@@ -1,0 +1,7 @@
+print("Pauze aan")
+
+#alleen te gebruiken bij pauze in lassen in python
+
+input("Press enter to continue")
+
+print("Pauze uit")
