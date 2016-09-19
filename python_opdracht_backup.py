@@ -1,6 +1,7 @@
 #! /usr/bin/python
 #-*-coding: utf-8 -*-
 #HSR_PYTHON
+#EliasBulk
 
 import math
 
@@ -26,7 +27,13 @@ opdr5somc = opdr5soma*opdr5somb
 opdr5somd = 8.5*opdr5somc
 opdr5som = opdr5somd+3
 
-opdr8som = math.pi #-2+math.sqrt(math.pow(3, 2)-4*5*6)/2*7
+#opdr8soma = math.pow()
+
+opdr9error = "Error!"
+opdr9functied = opdr9error
+opdr9functiec = opdr9functied
+opdr9functieb = opdr9functiec
+opdr9functiea = opdr9functieb
 
 #START
 print("Hallo!")
@@ -76,7 +83,11 @@ def opdracht7():
 
 def opdracht8():
     print("OPDRACHT8")
-    print(opdr8som)
+    #print(opdr8som)
+
+def opdracht9():
+    print("OPDRACHT9")
+    print(opdr9error)
 
 opdracht2()
 print(opdrscheiding)
@@ -92,5 +103,5 @@ opdracht7()
 print(opdrscheiding)
 opdracht8()
 print(opdrscheiding)
-
-
+opdracht9()
+print(opdrscheiding)

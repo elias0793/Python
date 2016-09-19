@@ -29,6 +29,12 @@ opdr5som = opdr5somd+3
 
 #opdr8soma = math.pow()
 
+opdr9error = "Dit is onzin!"
+opdr9functied = opdr9error
+opdr9functiec = opdr9functied
+opdr9functieb = opdr9functiec
+opdr9functiea = opdr9functieb
+
 #START
 print("Hallo!")
 
@@ -36,8 +42,12 @@ print("Hallo!")
 print("Gelieve in te vullen voor opdrachten 6 en 7")
 username = input("Vul uw gebruikernaam in: ")
 name = input("Vul uw naam in: ")
+agenow = int(input("Vul uw huidige leeftijd in: "))
 agestart = int(input("Vul uw geboortejaar in: "))
 age = 2016-agestart
+Celsius = int(input("Temperatuur in Celsius: "))
+Fahrenheit = 9.0/5.0 * Celsius + 32
+
 
 print(opdrscheiding)
 
@@ -79,6 +89,23 @@ def opdracht8():
     print("OPDRACHT8")
     #print(opdr8som)
 
+def opdracht9():
+    print("OPDRACHT9")
+    #Traceback (most recent call last):
+    #File "C:/Users/elias/Documents/Projecten/HogeschoolRotterdam/Python/python_opdracht1", line 32, in <module>
+    #opdr9error = 0/0
+    #ZeroDivisionError: division by zero
+    #===
+    #Error verteld dat het onmogelijk is om door 0 te delen. (Division by zero)
+    print(opdr9error)
+
+def opdracht10():
+    print("OPDRACHT10")
+    print(Celsius, "graden celsius is gelijk aan", Fahrenheit, "graden fahrenheit.")
+
+def opdracht11():
+    print("OPDRACHT11")
+
 opdracht2()
 print(opdrscheiding)
 opdracht3()
@@ -93,5 +120,7 @@ opdracht7()
 print(opdrscheiding)
 opdracht8()
 print(opdrscheiding)
-
-
+opdracht9()
+print(opdrscheiding)
+opdracht10()
+print(opdrscheiding)
