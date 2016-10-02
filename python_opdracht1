@@ -115,7 +115,7 @@ def opdracht10():
     print("OPDRACHT10")
     print(Celsius, "graden celsius is gelijk aan", Fahrenheit, "graden fahrenheit.")
 
-#def opdracht11():
+def opdracht11():
   #  agenow = int(input("Vul uw huidige leeftijd in: "))
     print("OPDRACHT11")
 
