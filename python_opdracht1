@@ -131,21 +131,15 @@ def opdracht13():
     rapportcijfer = int(input("Geef een rapportcijfer: "))
     if rapportcijfer < 3:
         print("Het rapportcijfer is een", rapportcijfer, "en dus slecht")
-    if rapportcijfer == 3 or rapportcijfer == 4:
+    if rapportcijfer >= 3 or rapportcijfer <= 4:9
         print("Het rapportcijfer is een", rapportcijfer, "en dus onvoldoende")
-    #if rapportcijfer == 4:
-     #   print("Het rapportcijfer is een", rapportcijfer, "en dus onvoldoende")
-    if rapportcijfer == 5:
+    if rapportcijfer > 4 or rapportcijfer <= 5:
         print("Het rapportcijfer is een", rapportcijfer, "en dus twijfelachtig")
-    if rapportcijfer == 6:
+    if rapportcijfer > 5 or rapportcijfer <= 7:
         print("Het rapportcijfer is een", rapportcijfer, "en dus voldoende")
-    if rapportcijfer == 7:
-        print("Het rapportcijfer is een", rapportcijfer, "en dus voldoende")
-    if rapportcijfer == 8:
+    if rapportcijfer > 7 or rapportcijfer <= 9:
         print("Het rapportcijfer is een", rapportcijfer, "en dus goed")
-    if rapportcijfer == 9:
-        print("Het rapportcijfer is een", rapportcijfer, "en dus goed")
-    if rapportcijfer == 10:
+    if rapportcijfer > 9 or rapportcijfer <= 10:
         print("Het rapportcijfer is een", rapportcijfer, "en dus uitstekend")
 
 
@@ -179,7 +173,12 @@ def opdracht15():
         character = character + 1
 
 def opdracht16():
+    character = 1
+    characteramount = int(input("Geef een maximum"))
     print("OPDRACHT16")
+    while character <= characteramount:
+        print(character)
+        character = character + 1
 
 def opdracht17():
     print("OPDRACHT17")
