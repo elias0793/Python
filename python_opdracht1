@@ -1,36 +1,21 @@
 #! /usr/bin/python
-#-*-coding: utf-8 -*-
-#HSR_PYTHON
-#EliasBulk
+# -*-coding: utf-8 -*-
+# HSR_PYTHON
+# EliasBulk
 
 import math
 
-
-
 opdrscheiding = "===================================================================================================="
 
-
-
-
-
-#8.5((8.1+4.8)(8*10))+3
-
-
-
-
-
-
-#START
+# START
 print("Hallo!")
-
-#Voor opdracht6, 7
-
 
 print(opdrscheiding)
 
 input("Enter voor meer!")
 
 print(opdrscheiding)
+
 
 def opdracht2():
     H = "H"
@@ -49,11 +34,13 @@ def opdracht2():
     print(H + space3 + H + space2 + I)
     print(H + space3 + H + space2 + I)
 
+
 def opdracht3():
     opdr3som = 100 + 200 - 10
 
     print("OPDRACHT3")
     print(opdr3som)
+
 
 def opdracht4():
     opdr4soma = 2 + 3
@@ -62,6 +49,7 @@ def opdracht4():
 
     print("OPDRACHT4")
     print("Het resultaat van 8(2+3)+3 is", opdr4som, "!!!")
+
 
 def opdracht5():
     opdr5soma = 8 * 10
@@ -73,11 +61,13 @@ def opdracht5():
     print("OPDRACHT5")
     print("Het antwoord van de berekening is:", opdr5som)
 
+
 def opdracht6():
     username = input("Vul uw gebruikernaam in: ")
 
     print("OPDRACHT6")
     print("Welkom", username, ", je bent nu ingelogd")
+
 
 def opdracht7():
     name = input("Vul uw naam in: ")
@@ -87,10 +77,12 @@ def opdracht7():
     print("OPDRACHT7")
     print("Hallo", name, ". In het jaar 2016 was/wordt je", age, ".")
 
+
 def opdracht8():
-    opdr8som = -2+math.sqrt(math.pow(3, 2)+4*5*6)/2*7
+    opdr8som = -2 + math.sqrt(math.pow(3, 2) + 4 * 5 * 6) / 2 * 7
     print("OPDRACHT8")
     print(opdr8som)
+
 
 def opdracht9():
     opdr9error = "Vervangen door 0/0"
@@ -100,24 +92,103 @@ def opdracht9():
     opdr9functiea = opdr9functieb
 
     print("OPDRACHT9")
-    #Traceback (most recent call last):
-    #File "C:/Users/elias/Documents/Projecten/HogeschoolRotterdam/Python/python_opdracht1", line 32, in <module>
-    #opdr9error = 0/0
-    #ZeroDivisionError: division by zero
-    #===
-    #Error verteld dat het onmogelijk is om door 0 te delen. (Division by zero)
+    # Traceback (most recent call last):
+    # File "C:/Users/elias/Documents/Projecten/HogeschoolRotterdam/Python/python_opdracht1", line 32, in <module>
+    # opdr9error = 0/0
+    # ZeroDivisionError: division by zero
+    # ===
+    # Error verteld dat het onmogelijk is om door 0 te delen. (Division by zero)
     print(opdr9functiea)
+
 
 def opdracht10():
     Celsius = int(input("Temperatuur in Celsius: "))
-    Fahrenheit = 9.0/5.0 * Celsius + 32
-
+    Fahrenheit = 9.0 / 5.0 * Celsius + 32
     print("OPDRACHT10")
     print(Celsius, "graden celsius is gelijk aan", Fahrenheit, "graden fahrenheit.")
 
 def opdracht11():
-  #  agenow = int(input("Vul uw huidige leeftijd in: "))
+    agenow = int(input("Vul uw huidige leeftijd in: "))
     print("OPDRACHT11")
+    if agenow < 18:
+        print("Je mag je rijbewijs nog niet halen")
+    else:
+        print("Je mag je rijbewijs halen")
+
+
+def opdracht12():
+    cijfer1 = int(input("Geef een cijfer: "))
+    cijfer2 = int(input("Geef een tweede cijfer: "))
+    cijfer3 = int(input("Geef een derde cijfer: "))
+    cijfer4 = int(input("Geef een vierde cijfer: "))
+    cijfermax = [cijfer1, cijfer2, cijfer3, cijfer4]
+    print("OPDRACHT12")
+    print(max(cijfermax))
+
+
+def opdracht13():
+    print("OPDRACHT13")
+    rapportcijfer = int(input("Geef een rapportcijfer: "))
+    if rapportcijfer < 3:
+        print("Het rapportcijfer is een", rapportcijfer, "en dus slecht")
+    if rapportcijfer == 3 or rapportcijfer == 4:
+        print("Het rapportcijfer is een", rapportcijfer, "en dus onvoldoende")
+    #if rapportcijfer == 4:
+     #   print("Het rapportcijfer is een", rapportcijfer, "en dus onvoldoende")
+    if rapportcijfer == 5:
+        print("Het rapportcijfer is een", rapportcijfer, "en dus twijfelachtig")
+    if rapportcijfer == 6:
+        print("Het rapportcijfer is een", rapportcijfer, "en dus voldoende")
+    if rapportcijfer == 7:
+        print("Het rapportcijfer is een", rapportcijfer, "en dus voldoende")
+    if rapportcijfer == 8:
+        print("Het rapportcijfer is een", rapportcijfer, "en dus goed")
+    if rapportcijfer == 9:
+        print("Het rapportcijfer is een", rapportcijfer, "en dus goed")
+    if rapportcijfer == 10:
+        print("Het rapportcijfer is een", rapportcijfer, "en dus uitstekend")
+
+
+def opdracht14():
+    print("OPDRACHT14")
+    benjeeenmens = input("Ben je een mens? (ja/nee)")
+    if benjeeenmens == "nee":
+        print("Je bent een bot")
+    else:
+        if benjeeenmens == "ja":
+            print("Goedemiddag!")
+            studeerjeophro = input("Studeer/werk je op HRO?")
+            if studeerjeophro == "ja":
+                benjeeenstudent = input("Ben je een student?")
+                if benjeeenstudent == "ja":
+                    print("Je kan nu inloggen op het netwerk")
+                else:
+                    print("Je kan nu inloggen op het netwerk")
+                    hebjeeenwerkkamer = input("Heb je een werkkamer?")
+                    if hebjeeenwerkkamer == "ja":
+                        print("Je kamerdeur is nu geopend.")
+            else:
+                print("Sorry, gasten mogen niet inloggen op het HRO netwerk. \n Het keyboard wordt nu gelocked")
+
+
+def opdracht15():
+    character = 1
+    print("OPDRACHT15")
+    while character <= 10:
+        print(character)
+        character = character + 1
+
+def opdracht16():
+    print("OPDRACHT16")
+
+def opdracht17():
+    print("OPDRACHT17")
+
+def opdracht18():
+    print("OPDRACHT19")
+
+def opdracht19():
+    print("OPDRACHT19")
 
 opdracht2()
 print(opdrscheiding)
@@ -138,4 +209,20 @@ print(opdrscheiding)
 opdracht10()
 print(opdrscheiding)
 opdracht11()
+print(opdrscheiding)
+opdracht12()
+print(opdrscheiding)
+opdracht13()
+print(opdrscheiding)
+opdracht14()
+print(opdrscheiding)
+opdracht15()
+print(opdrscheiding)
+opdracht16()
+print(opdrscheiding)
+opdracht17()
+print(opdrscheiding)
+opdracht18()
+print(opdrscheiding)
+opdracht19()
 print(opdrscheiding)
