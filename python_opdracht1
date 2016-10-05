@@ -131,7 +131,7 @@ def opdracht13():
     rapportcijfer = int(input("Geef een rapportcijfer: "))
     if rapportcijfer < 3:
         print("Het rapportcijfer is een", rapportcijfer, "en dus slecht")
-    if rapportcijfer >= 3 or rapportcijfer <= 4:9
+    if rapportcijfer >= 3 or rapportcijfer <= 4:
         print("Het rapportcijfer is een", rapportcijfer, "en dus onvoldoende")
     if rapportcijfer > 4 or rapportcijfer <= 5:
         print("Het rapportcijfer is een", rapportcijfer, "en dus twijfelachtig")
@@ -189,6 +189,15 @@ def opdracht18():
 def opdracht19():
     print("OPDRACHT19")
 
+def opdracht20():
+    print("OPDRACHT20")
+
+def opdracht21():
+    print("OPDRACHT21")
+
+def opdracht22():
+    print("OPDRACHT22")
+
 opdracht2()
 print(opdrscheiding)
 opdracht3()
@@ -224,4 +233,10 @@ print(opdrscheiding)
 opdracht18()
 print(opdrscheiding)
 opdracht19()
+print(opdrscheiding)
+opdracht20()
+print(opdrscheiding)
+opdracht21()
+print(opdrscheiding)
+opdracht22()
 print(opdrscheiding)
